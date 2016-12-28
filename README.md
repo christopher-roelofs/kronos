@@ -9,10 +9,9 @@ Jobs are a collection of tasks to be executed serially. each job is defined in x
 <name></name>
 <description></description>
 <tasktype>
-<param>
-</param>
+<param><\/param>
 <tasktype>
-</task
-</job>
+<\/task
+<\/job>
 
 new task types can be added and go in task_types. Each task section of a job is parsed and a task object is created for each.
