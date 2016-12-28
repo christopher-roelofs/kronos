@@ -16,4 +16,4 @@ Jobs are a collection of tasks to be executed serially. each job is defined in x
 </job>
 ```
 
-new task types can be added and go in task_types. Each task section of a job is parsed and a task object is created for each.
+new task types can be added and go in task_types. Each task section of a job is parsed and a task object is created for each.Information can be passed to the next task through the main job object.
