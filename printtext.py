@@ -11,4 +11,3 @@ class PrintText():
         print "Running task : " + self.name + "%s" % datetime.now()
         print "Description: " + self.description
         print "text: " + self.text
-        time.sleep(5)
