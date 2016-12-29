@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<job>
+    <task>
+        <name>print_text</name>
+        <description>print some text</description>
+        <printtext>
+            <text>this is some text</text>>
+        </printtext>
+    </task>
+</job>

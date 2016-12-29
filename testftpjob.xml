@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<job>
+    <task>
+        <name></name>
+        <description></description>
+        <ftp>
+            <source>
+                <host></host>
+                <port></port>
+                <username></username>
+                <password></password>
+                <path></path>
+            </source>
+        </ftp>
+    </task>
+</job>
