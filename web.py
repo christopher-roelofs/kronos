@@ -1,4 +1,4 @@
-from bottle import route, run, template,request,post
+from bottle import route, run, template,request,post, static_file
 from datetime import datetime
 import time
 import os
@@ -6,6 +6,7 @@ import job
 import logging
 from apscheduler.schedulers.background import BackgroundScheduler
 import instance
+
 
 logging.basicConfig()
 jobs = {}
@@ -22,6 +23,10 @@ def runJob(id):
 scheduler = BackgroundScheduler()
 scheduler.configure(job_defaults=job_defaults)
 scheduler.start()
+
+@route('/')
+def server_static():
+    return static_file("index.html", root='./')
 
 @route('/newjob')
 def index():
