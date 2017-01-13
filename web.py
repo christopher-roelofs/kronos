@@ -24,9 +24,9 @@ scheduler = BackgroundScheduler()
 scheduler.configure(job_defaults=job_defaults)
 scheduler.start()
 
-@route('/')
-def server_static():
-    return static_file("index.html", root='./')
+@route('/<path:path>')
+def callback(path):
+    return static_file(path, "./")
 
 @route('/newjob')
 def index():
